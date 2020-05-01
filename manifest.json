@@ -1,0 +1,20 @@
+{
+  "name": "No Plugs Musk",
+  "version": "69.0.420.666",
+  "manifest_version": 2,
+  "description": "Musk in his natural no plug state!",
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "No Plugs Musk"
+  },
+  "icons": {
+    "128": "images/icon.png"
+  },
+  "web_accessible_resources": [
+    "images/musk.jpeg"
+  ],
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["onPage.js"]
+  }]
+}
